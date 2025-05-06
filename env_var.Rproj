@@ -106,6 +106,6 @@ result_list <- lapply(nc_files, process_nc_file)
 # Combine all data frames into one (optional)
 final_df <- do.call(rbind, result_list)
 
-# result 
+# result: a dataframe merging daily max_temp info over the years from files dowloaded, split by geographic areas (lon lat), within the cropped area we defined
 head(final_df)
 
